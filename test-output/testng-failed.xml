@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="regression.InventoryCategoryTest">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="beforeSuite"/>
+          <include name="verifyDeletedCategoryIsNotDisplayedOnCategoryPage"/>
+          <include name="beforeClassOfA"/>
+          <include name="afterClass"/>
+          <include name="verifyAddedCategoryIsDisplayedOnCategoryPage"/>
+          <include name="verifyUpdatedCategoryIsDisplayedOnCategoryPage"/>
+          <include name="verifyUserCanEditExistingCategory"/>
+          <include name="afterSuiteMethod"/>
+          <include name="beforeMethod"/>
+          <include name="verifyUserCanAddNewCategoryOnCategoryPage"/>
+          <include name="verifyExistingCategoryCanBeDeleted"/>
+        </methods>
+      </class> <!-- regression.InventoryCategoryTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

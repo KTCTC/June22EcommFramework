@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Regression Suite">
+    <listeners>
+        <!-- <listener class-name="com.uiFramework.companyName.bhanProjectName.helper.listener.RetryListener"></listener> -->
+        <listener class-name="com.uiFramework.companyName.bhanuProjectName.helper.listener.ExtentListener"></listener>
+    </listeners>
+    <test name="A">
+        <classes>
+            <class name="com.uiFramework.A"></class>
+        </classes>
+    </test>
+     <test name="B">
+        <classes>
+            <class name="com.uiFramework.B"></class>
+        </classes>
+    </test>
+     <test name="C">
+        <classes>
+            <class name="com.uiFramework.C"></class>
+        </classes>
+    </test>
+</suite>

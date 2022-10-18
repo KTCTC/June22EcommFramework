@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [KTCTC]">
+  <test thread-count="5" name="regression(failed)">
+    <classes>
+      <class name="regression.InventoryCategoryTest">
+        <methods>
+          <include name="verifyCategoryPageCountWillBeSameAfterEdit"/>
+          <include name="afterClass"/>
+          <include name="verifyUserCanEditExistingCategory"/>
+          <include name="afterSuiteMethod"/>
+          <include name="beforeMethod"/>
+          <include name="verifyCategoryPageCountGetsIncreasedOnAddingNewCategory"/>
+          <include name="verifyUserCanDeleteExistingCategory"/>
+          <include name="verifyCategoryAddedSuccessMessageIsDisplayed"/>
+          <include name="verifyCategoryPageCountWillGetDecreasedAfterDelete"/>
+          <include name="afterMethod"/>
+          <include name="beforeSuite"/>
+          <include name="beforeClassOfA"/>
+          <include name="verifyCategoryUpdatedSuccessMessageIsDisplayed"/>
+          <include name="verifyCategoryDeletedSuccessMessageIsDisplayed"/>
+          <include name="verifyUserCanAddNewCategory"/>
+        </methods>
+      </class> <!-- regression.InventoryCategoryTest -->
+      <class name="regression.LoginFunctionalityTest">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="beforeSuite"/>
+          <include name="beforeClassOfA"/>
+          <include name="afterClass"/>
+          <include name="afterSuiteMethod"/>
+          <include name="beforeMethod"/>
+          <include name="verifyUsercanInventory"/>
+          <include name="verifyUsercanLogin"/>
+          <include name="verifyUsercanAddBrand"/>
+        </methods>
+      </class> <!-- regression.LoginFunctionalityTest -->
+      <class name="regression.InventoryProduct">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="beforeSuite"/>
+          <include name="afterClass"/>
+          <include name="verifyUserCanAddProduct"/>
+          <include name="afterSuiteMethod"/>
+          <include name="beforeMethod"/>
+          <include name="beforeClassOfA"/>
+        </methods>
+      </class> <!-- regression.InventoryProduct -->
+    </classes>
+  </test> <!-- regression(failed) -->
+</suite> <!-- Failed suite [KTCTC] -->

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test(failed)" parallel="classes">
+    <classes>
+      <class name="KTCTC.regression.WebTablesTest2">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="verifyExistringUserCanBeDeleted"/>
+          <include name="verifyNewUserCanBeAddedOnWebTablePage"/>
+          <include name="beforeSuite"/>
+          <include name="beforeClassOfA"/>
+          <include name="afterClass"/>
+          <include name="verifyExistingUserCanBeEdited"/>
+          <include name="afterSuiteMethod"/>
+          <include name="beforeMethod"/>
+          <include name="verifyAllDetailsOfEditedUser"/>
+          <include name="verifyUserCanNavigateToWebTablePage"/>
+          <include name="verifyAllDetailsOfNewlyAddedUser"/>
+        </methods>
+      </class> <!-- KTCTC.regression.WebTablesTest2 -->
+      <class name="selnium.MyFirstMavenProject.AssertsInTestNG.enableDependentInvocation">
+        <methods>
+          <include name="verifyUserCanLoginToSystem"/>
+          <include name="verifyUserCanSendEmail"/>
+        </methods>
+      </class> <!-- selnium.MyFirstMavenProject.AssertsInTestNG.enableDependentInvocation -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
