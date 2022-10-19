@@ -3,22 +3,19 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="regression.InventoryCategoryTest">
+      <class name="regression.SampleClass">
         <methods>
           <include name="afterMethod"/>
           <include name="beforeSuite"/>
-          <include name="verifyDeletedCategoryIsNotDisplayedOnCategoryPage"/>
+          <include name="verifyUserCanLoginToFacebook"/>
           <include name="beforeClassOfA"/>
+          <include name="verifyUserCanUploadFileSuccessFully"/>
           <include name="afterClass"/>
-          <include name="verifyAddedCategoryIsDisplayedOnCategoryPage"/>
-          <include name="verifyUpdatedCategoryIsDisplayedOnCategoryPage"/>
-          <include name="verifyUserCanEditExistingCategory"/>
+          <include name="Z"/>
           <include name="afterSuiteMethod"/>
           <include name="beforeMethod"/>
-          <include name="verifyUserCanAddNewCategoryOnCategoryPage"/>
-          <include name="verifyExistingCategoryCanBeDeleted"/>
         </methods>
-      </class> <!-- regression.InventoryCategoryTest -->
+      </class> <!-- regression.SampleClass -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

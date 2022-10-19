@@ -37,7 +37,17 @@ public class TestBase {
 	public void beforeSuite() throws Exception{
 		extent = ExtentManager.getInstance();
 	}
-	
+	@BeforeClass
+	public void beforeClassOfA() {
+		driver = ChromeBrowser.getBrowserInstance();
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.manage().deleteAllCookies();
+		//driver.manage().window().maximize();
+		test = extent.createTest(getClass().getSimpleName());
+		driver.get(proObj.getPropertyValueFromFile("baseURL"));
+		cmObj.acceptPrivateConnectionWarningIfPresent(driver);		
+		cmObj.loginToApplication(driver, proObj.getPropertyValueFromFile("adminNumber"),proObj.getPropertyValueFromFile("adminPass"));
+	}
 	
 		
 	@BeforeMethod
