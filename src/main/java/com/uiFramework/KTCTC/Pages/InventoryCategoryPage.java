@@ -114,6 +114,12 @@ public class InventoryCategoryPage {
 	public void serachStringInSearchBoxCategoryPage(String searchItem) {
 		clearSearchBoxOnCategoryPage();
 		driver.findElement(searchBoxOnCategotyPage).sendKeys(searchItem);
+		try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 
 	}
 
