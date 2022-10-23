@@ -101,6 +101,7 @@ public class CommonMethods {
 		driver.findElement(By.name("email")).sendKeys(number);
 		driver.findElement(By.id("myInput")).sendKeys(pass);
 		driver.findElement(By.name("login")).click();
+		
 	}
 	
 	/**
